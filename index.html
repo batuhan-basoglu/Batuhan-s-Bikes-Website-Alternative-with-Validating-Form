@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Batuhan's Bikes</title>
+  <!-- Google fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- CSS stylesheet -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+  <section class="colored-section2" id="title">
+
+    <div class="container-fluid">
+    <img src="images/logo2.png" style="float:left;width:42px;height:42px; margin-right:20px; margin-top:10px">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Batuhan's Bikes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing" id="test">Repair Plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cta" id="test">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#appointment" id="test">Appointment</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Nothing beats the high of a good bike ride. </h1>
+          <button type="button" onclick="toAppointment()" class="btn btn-lg btn-dark download-btn"><i class="fas fa-bicycle"></i> Book an
+            Appointment</button>
+        </div>
+
+        <div class="col-lg-6">
+          <img class="title-image" src="images/bike_repair1.jpg" alt="bike repair">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Owner Bio -->
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="feature-box col">
+
+          <h1 style="font-weight: bold;">Hey, my name is Batuhan.</h1>
+          <p>Ever since I was a child, it was my dream to own 
+          a bike shop. One day after school, a bike fell out of the sky 
+          and I could see that it was broken. I managed to fix that bike 
+          up and use it in bike tournaments. That same bike is the one that I 
+          used to win the national biking tournament in Bikini Bottom. To this day, 
+          I don't know where that bike came from but I wish to pass on my good fortune to 
+          others by helping them with their bikes. </p>
+        </div>
+
+        <div  class="feature-box col-lg-4">
+          <p><img src="images\owner_pic.jpg" alt="Girl in a jacket"> </p>
+        </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section2" id="colored-section2">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text"> "Strong 10 from me. The service here is phenomenal." </h2>
+          <img class="testimonial-img" src="images\customers\Anthony.png" alt="dog-profile">
+          <em>Anthony Green</em>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Thanks to the folks over at Batuhan's Bikes, I just upgraded my old bike to a
+            new mountain bike. Love it!" </h2>
+          <img class="testimonial-img" src="images\customers\Dottie.jpg" alt="lady-profile">
+          <em>Dottie Bean</em>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"Most people don't know me. If you ask any of my friends they will say I bike.
+            And the only place I trust to get my bikes are Batuhan's Bikes"</h2>
+          <img class="testimonial-img" src="images\customers\bobby.jpg" alt="lady-profile">
+          <em>Bob </em>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">"The squeeze has not squoze." </h2>
+          <img class="testimonial-img" src="images\customers\keith.png" alt="lady-profile">
+          <em>Keith Value</em>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">Our Services</h2>
+    <p>Simple and affordable price plans for your bike.</p>
+
+
+    <div class="row">
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Brake Repair</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$47.95</h2>
+            <img class="title-image" src="images/brake.jpg" alt="bike1">
+            <p>Repair Using Standard kit</p>
+            <p>Part Replacement</p>
+            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Fixing Punctures</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$59.95</h2>
+            <img class="title-image" src="images/tire.jpg" alt="bike2">
+            <p> Repair Using Advanced Kit</p>
+            <p> Part Replacement</p>
+            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pricing-col col-lg-4 ">
+        <div class="card">
+          <div class="card-header">
+            <h3>Full Repair/Maintenance</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$79.95</h2>
+            <img class="title-image" src="images/maintenance.jpg" alt="bike3">
+            <p>Full Part Replacement</p>
+            <p>Full Cleaning</p>
+            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section2" id="cta">
+  <div class="row">
+
+    <div class ="col-12"> 
+    <h2 class="big-heading">Contact Us</h2>
+      <p style="color:white;font-size:20px">5 Hawthorne Avenue <br>
+        Ottawa, Ontario <br>
+        Phone: (613) 567-8180 <br>
+        Email: info@cycosport.ca <br>
+        <p style= "font-weight: bold; color: white;font-size:25px ">Buisness Hours: 8:30 - 22:00, Monday to Friday <p>
+      </p>
+    </div>
+
+
+
+    </div>
+
+   </div>
+    
+
+
+    <div class="row">
+      <div class="col-12">
+        <div id="googleMap" class="map-img"></div>
+      </div>
+
+
+    </div>
+      
+
+
+
+
+      <script>
+        function myMap() {
+          var mapProp = {
+            center: new google.maps.LatLng(45.412085720162494, -75.68236814266143),
+            zoom: 18,
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+      </script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5TiZoTEwEcB_HUZRhe_rXrcSWW1Z5x8I&callback=myMap"></script>
+
+  </section>
+
+
+  <!--- Book an Appointment -->
+  <section class="white-section" id="appointment">
+    <div class="container-fluid">
+      <form action="action_page.php">
+
+      <h2 class="big-heading">Book an Appointment</h2>
+
+      <!--- Select Services --->
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Select Services</option>
+        <option value="1">Brake Repair</option>
+        <option value="2">Fixing Punctures</option>
+        <option value="3">Full Repair/Maintenance</option>
+      </select>
+      <!--- Select Appointment Data --->
+      <div class="request-label">
+        <label for="appTime">Request Appointment for: </label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </div>
+    
+        <div class="row">
+          <div class="col-6" style="float: right;">
+            <input type="text" id="fname" name="firstname" placeholder="First Name">
+          </div>
+          <div class="col-6">
+            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+          </div>
+        </div>
+
+        <input type="text" id="subject" name="subject" placeholder="Subject">
+
+        <textarea id="message" name="message" placeholder="Your Message" style="height:200px"></textarea>
+    
+       <br>
+       <br>
+      <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="colored-section2" id="footer">
+    <div class="container-fluid">
+      <i class="social-icon fab fa-twitter"></i>
+      <i class="social-icon fab fa-facebook"></i>
+      <i class="social-icon fab fa-instagram"></i>
+      <i class="social-icon fas fa-envelope"></i>
+      <p style="color:white;">© Copyright SEG3125 - Group 3</p>
+    </div>
+  </footer>
+
+  <!-- script to scroll to appointment-->
+  <script>
+    function toAppointment() {
+      document.getElementById('appointment').scrollIntoView();
+    }
+  </script>
+
+</body>
+
+
+
+</html>
