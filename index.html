@@ -47,13 +47,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#pricing" id="test">Repair Plans</a>
+              <a class="nav-link" href="#pricing" id="test"> Repair Plans <i class="fas fa-toolbox"></i> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#cta" id="test">Contact Us</a>
+              <a class="nav-link" href="#cta" id="test"> Contact Us <i class="fas fa-map-signs"></i> </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#appointment" id="test">Appointment</a>
+              <a class="nav-link" href="#appointment" id="test"> Appointment <i class="far fa-clock"></i> </a>
             </li>
           </ul>
         </div>
@@ -173,7 +173,7 @@
             <img class="title-image" src="images/brake.jpg" alt="bike1">
             <p>Repair Using Standard kit</p>
             <p>Part Replacement</p>
-            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+            <button type="button" onclick="toAppointment()" class="btn btn-block btn-outline-dark btn-lg">Select</button>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
             <img class="title-image" src="images/tire.jpg" alt="bike2">
             <p> Repair Using Advanced Kit</p>
             <p> Part Replacement</p>
-            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+            <button type="button" onclick="toAppointment()" class="btn btn-block btn-outline-dark btn-lg">Select</button>
           </div>
         </div>
       </div>
@@ -204,7 +204,7 @@
             <img class="title-image" src="images/maintenance.jpg" alt="bike3">
             <p>Full Part Replacement</p>
             <p>Full Cleaning</p>
-            <button type="button" class="btn btn-block btn-outline-dark btn-lg">Select</button>
+            <button type="button" onclick="toAppointment()" class="btn btn-block btn-outline-dark btn-lg">Select</button>
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
     
        <br>
        <br>
-      <input type="submit" value="Submit">
+      <button type="submit" class="btn btn-lg btn-dark download-btn">Submit  <i class="far fa-calendar-check"></i></button>
     
       </form>
     </div>
