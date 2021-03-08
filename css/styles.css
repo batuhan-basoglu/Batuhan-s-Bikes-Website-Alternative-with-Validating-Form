@@ -1,0 +1,291 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+
+/* Headings */
+
+.big-heading {
+    font-family: 'Montserrat-Black';
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.big-heading-2 {
+    font-family: 'Montserrat-Black';
+    font-size: 2.0rem;
+    line-height: 1.5;
+    padding-top: 80px;
+}
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+
+/* Sections */
+
+.colored-section#title {
+    background-image: url("images/biking.jpg");
+}
+
+.colored-section {
+    background-color: #a77a32;
+    color: #ffffff;
+}
+
+.colored-section2 {
+    background-color: #34626c;
+    color: #ffffff;
+}
+
+.colored-section3 {
+    background-color: #cfd3ce;
+    color: #ffffff;
+}
+
+.white-section {
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat-Bold';
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: rgb(77, 77, 77);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+/* navigation bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.navbar-item {
+    padding: 0px 18px;
+}
+
+.navbar-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-light', sans-serif;
+}
+
+#test {
+    color: rgb(236, 236, 236);
+}
+
+#test:hover {
+    color: rgb(216, 181, 24);
+}
+
+
+/* Download Buttons */
+
+.download-btn {
+    margin: 5% 3% 5% 0;
+}
+
+
+/* Title Section */
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+/* Title Image */
+
+.title-image {
+    width: 100%;
+    position: right;
+    right: 30%;
+}
+
+#features .container-fluid {
+    padding: 3% 5%;
+    text-align: left;
+}
+
+
+/* Features section */
+
+#features {
+    position: relative;
+    z-index: 1;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.feature-box {
+    padding: 4%;
+}
+
+.feature-icon {
+    color: #34626c;
+    margin-bottom: 1rem;
+}
+
+.feature-icon:hover {
+    color: #839b97;
+}
+
+
+/* testimonial section */
+
+#testimonials {
+    background-color: #ef8172;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.carousel-item {}
+
+
+/* Press section */
+
+#press {
+    background-color: #81ef72;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+/* Pricing Section */
+
+#pricing {
+    padding: 100px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+
+/* CTA Section */
+
+#cta {
+    padding: 3% 7%
+}
+
+.map-img {
+    width: 70%;
+    height: 400px;
+    margin: 3% auto;
+}
+
+
+/*****Appointment Section *****/
+
+.request-label {
+    text-align: left;
+}
+
+
+/* Footer section */
+
+#footer {}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+.colored-section#title {
+    background-image: url("images/biking.jpg");
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid #ccc;
+    /* Gray border */
+    border-radius: 4px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+/* Style the submit button with a specific background color etc */
+
+input[type=submit] {
+    background-color: #d60024;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+input[type=submit]:hover {
+    background-color: #fa4664;
+}
