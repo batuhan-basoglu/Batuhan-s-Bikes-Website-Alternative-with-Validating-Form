@@ -8,7 +8,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300;400;700&display=swap"
     rel="stylesheet">
-  <!-- CSS stylesheet -->
+  <!-- CSS stylesheet -->.
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
@@ -226,15 +226,8 @@
         <p style= "font-weight: bold; color: white;font-size:25px ">Buisness Hours: 8:30 - 22:00, Monday to Friday <p>
       </p>
     </div>
-
-
-
-    </div>
-
    </div>
-    
-
-
+  
     <div class="row">
       <div class="col-12">
         <div id="googleMap" class="map-img"></div>
@@ -243,9 +236,6 @@
 
     </div>
       
-
-
-
 
       <script>
         function myMap() {
@@ -265,41 +255,109 @@
   <!--- Book an Appointment -->
   <section class="white-section" id="appointment">
     <div class="container-fluid">
-      <form action="action_page.php">
+      
 
       <h2 class="big-heading">Book an Appointment</h2>
+      <!-- Accordion for booking a service-->
+      <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Book Services
+        </button>
+      </h5>
+    </div>
 
-      <!--- Select Services --->
-      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
-        <option selected>Select Services</option>
-        <option value="1">Brake Repair</option>
-        <option value="2">Fixing Punctures</option>
-        <option value="3">Full Repair/Maintenance</option>
-      </select>
-      <!--- Select Appointment Data --->
-      <div class="request-label">
-        <label for="appTime">Request Appointment for: </label>
-        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
-      </div>
-    
-        <div class="row">
-          <div class="col-6" style="float: right;">
-            <input type="text" id="fname" name="firstname" placeholder="First Name">
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+          <h2>Services</h2>
+          <p>Please select services you require</p>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+             <option selected>Select Service</option>
+             <option value="1">Brake Repair</option>
+             <option value="2">Fixing Punctures</option>
+             <option value="3">Full Repair/Maintenance</option>
+             <option value="3">Other Inquiries</option>
+          </select>
+          <hr>
+          <h2>Mechanics</h2>
+          <p>Please select your technican</p>
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+             <option selected>Select technican</option>
+             <option value="1">Trey</option>
+             <option value="2">Jerry </option>
+             <option value="3">Andre</option>
+             <option value="3">No preference</option>
+          </select>
+          <hr>
+          <!-- notify user of the availability of technican before selecting time, let them block dates that arent bookable and let users know-->
+          <h2>Appointment Time</h2>
+          <p>Please select appointment time</p>
+          <div class="request-label">
+            <label for="appTime">Request Appointment for: </label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
           </div>
-          <div class="col-6">
-            <input type="text" id="lname" name="lastname" placeholder="Last Name">
+    </div>
+  </div>
+  </div>
+    <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Contact Information
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-6" style="float: right;">
+              <input type="text" id="fname" name="firstname" placeholder="First Name">
+            </div>
+            <div class="col-6">
+              <input type="text" id="lname" name="lastname" placeholder="Last Name">
+            </div>
           </div>
         </div>
-
-        <input type="text" id="subject" name="subject" placeholder="Subject">
-
-        <textarea id="message" name="message" placeholder="Your Message" style="height:200px"></textarea>
-    
+        <div class="form-group">
+          <div class="row">
+            <div class="col-6" style="float: right;">
+              <input type="text" id="phoneNum" name="phoneNumber" placeholder="Phone Number">
+            </div>
+            <div class="col-6">
+              <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Your Message" style="height:200px"></textarea>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Account Details
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        </div>
+    </div>
+  </div>
+  </div>
        <br>
        <br>
       <input type="submit" value="Submit">
     
-      </form>
+      
     </div>
   </section>
 
