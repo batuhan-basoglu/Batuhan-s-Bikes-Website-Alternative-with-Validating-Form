@@ -331,7 +331,7 @@
 
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
-          <h2>Services</h2>
+          <h2><i class="fas fa-toolbox"></i> Services</h2>
           <p>Please select services you require</p>
             <select class="form-select form-select-sm" aria-label=".form-select-sm example">
              <option selected>Select Service</option>
@@ -341,7 +341,7 @@
              <option value="3">Other Inquiries</option>
           </select>
           <hr>
-          <h2>Mechanics</h2>
+          <h2><i class="fas fa-users"></i> Mechanics</h2>
           <p>Please select your technican</p>
           <select class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getMechanic(this)">
              <option selected>Select technican</option>
@@ -352,7 +352,7 @@
           </select>
           <hr>
           <!-- notify user of the availability of technican before selecting time, let them block dates that arent bookable and let users know-->
-          <h2>Appointment Time</h2>
+          <h2><i class="fas fa-calendar-plus"></i> Appointment Time</h2>
           <p>Please select an appointment time</p>
           <div class="request-label">
             <label for="appTime">Choose an appointment date: </label>
@@ -377,6 +377,8 @@
     </div>
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
+        <h2><i class="far fa-address-book"></i> Contact Information</h2>
+        <p>Please fill the spaces below with your contact information</p>
         <form>
         <div class="form-group">
           <div class="row">
@@ -403,7 +405,8 @@
           </div>
         </div>
         <hr>
-        <h2>Account Details</h2>
+        <h2><i class="fas fa-money-check-alt"></i> Payment Information</h2>
+        <p>Please fill the spaces below with your payment information</p>
          <div class="form-group">
           <div class="row">
             <div class="col-6" style="float: right;">
