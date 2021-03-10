@@ -62,13 +62,20 @@ h3 {
     font-size: 1.5rem;
 }
 
-h5{
+h5 {
     font-weight: bold;
 }
 
 p {
     color: rgb(77, 77, 77);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 20%;
+  /* margin: 100px auto; */
 }
 
 
@@ -135,24 +142,22 @@ p {
     text-align: left;
 }
 
+
 /* Worker profiles  */
-.profile{
-    width:  200px;
+
+.profile {
+    width: 200px;
     height: 200px;
     object-fit: cover;
-    
-
 }
 
-.profile_names{
-    font-size:25px;
+.profile_names {
+    font-size: 25px;
 }
 
-.name_text{
+.name_text {
     font-weight
-
 }
-
 
 
 /* Features section */
@@ -252,13 +257,13 @@ input:invalid+span:after {
     position: absolute;
     content: '✖';
     padding-left: 5px;
-  }
-  
-  input:valid+span:after {
+}
+
+input:valid+span:after {
     position: absolute;
     content: '✓';
     padding-left: 5px;
-  }
+}
 
 
 /* Footer section */
