@@ -63,7 +63,7 @@ h3 {
 }
 
 h5 {
-    font-weight: bold;
+    font-size: 23px;
 }
 
 p {
@@ -79,6 +79,11 @@ hr {
 }
 
 
+h2:hover{
+    color:#72a7b3
+}
+
+
 /* navigation bar */
 
 .navbar {
@@ -88,6 +93,7 @@ hr {
 .section-heading {
     font-size: 3rem;
     line-height: 1.5;
+    color: #34626c
 }
 
 .navbar-brand {
