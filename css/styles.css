@@ -62,6 +62,10 @@ h3 {
     font-size: 1.5rem;
 }
 
+h5{
+    font-weight: bold;
+}
+
 p {
     color: rgb(77, 77, 77);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
@@ -130,6 +134,25 @@ p {
     padding: 3% 5%;
     text-align: left;
 }
+
+/* Worker profiles  */
+.profile{
+    width:  200px;
+    height: 200px;
+    object-fit: cover;
+    
+
+}
+
+.profile_names{
+    font-size:25px;
+}
+
+.name_text{
+    font-weight
+
+}
+
 
 
 /* Features section */
@@ -274,7 +297,7 @@ textarea {
 
 /* Style the submit button with a specific background color etc */
 
-button[type=submit] {
+input[type=submit] {
     background-color: #d60024;
     color: white;
     padding: 12px 20px;
@@ -286,6 +309,6 @@ button[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 
-button[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #fa4664;
 }
