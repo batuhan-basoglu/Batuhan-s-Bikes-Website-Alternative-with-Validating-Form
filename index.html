@@ -31,7 +31,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
-      
+
     </script>
 </head>
 
@@ -378,11 +378,13 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         <h2><i class="far fa-address-book"></i> Contact Information</h2>
-        <p>Please fill the spaces below with your contact information</p>
+        <p class="res">Please fill the spaces below with your contact information</p>
         <form>
         <div class="form-group">
           <div class="row">
+
             <div class="col-6" style="float: right;">
+
             <label for="fnameLabel">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="First Name">
             </div>
@@ -406,7 +408,7 @@
         </div>
         <hr>
         <h2><i class="fas fa-money-check-alt"></i> Payment Information</h2>
-        <p>Please fill the spaces below with your payment information</p>
+        <p class="rec">Please fill the spaces below with your payment information</p>
          <div class="form-group">
           <div class="row">
             <div class="col-6" style="float: right;">
@@ -414,7 +416,7 @@
               <input type="text" id="cardHolder" name="cardHolder" placeholder="Name on the Card">
             </div>
             <div class="col-6">
-              <label for="creditCardLabel">Credit Card</label> 
+              <label for="creditCardLabel">Credit Card</label>
               <input type="text" id="creditCard" name="creditCard" placeholder="Credit Card">
             </div>
           </div>
@@ -430,7 +432,7 @@
               <input type="text" id="expiryDate" name="cvv" placeholder="CVV">
             </div>
           </div>
-          
+
         </div>
       </form>
     </div>
@@ -453,8 +455,8 @@
        <br>
        <br>
       <input type="submit" value="Submit">
-    
-      
+
+
     </div>
   </section>
 
@@ -477,14 +479,14 @@
       document.getElementById('appointment').scrollIntoView();
     }
 
-    var value = 0; 
+    var value = 0;
 
     $(function() {
         $( "#datepicker").datepicker({ beforeShowDay: getAvailability});
-    });  
+    });
 
     function getMechanic(selectObject) {
-      value = selectObject.value;  
+      value = selectObject.value;
     }
 
     function getAvailability(date){
@@ -500,9 +502,9 @@
       else
             return [ true, "", "" ]
     }
-    
+
   </script>
-  
+
 
 </body>
 
