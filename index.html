@@ -26,6 +26,13 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+      
+    </script>
 </head>
 
 <body>
@@ -102,7 +109,7 @@
             <h5 class="card-title ">Batuhan</h5>
             <p class="card-text">Hey, I'm the store owner. Ever since I was a child, it was my dream to own 
               a bike shop. I specialize in brake repair.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Availability: Monday-Friday</small></p>
           </div>
         </div>
       </div>
@@ -119,10 +126,10 @@
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Mumem</h5>
+            <h5 class="card-title">Mumen</h5>
             <p class="card-text">Without biking, my life has no meaning. I am 
         the best at fixing punctures in town.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Availability: Tuesday-Wednesday</small></p>
           </div>
         </div>
       </div>
@@ -142,7 +149,7 @@
           <div class="card-body">
             <h5 class="card-title">Stewart</h5>
             <p class="card-text"> I recently got my masters in bike fixing. I can help you with any repair or maintenence </p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <p class="card-text"><small class="text-muted">Availability: Monday-Wednesday</small></p>
           </div>
         </div>
       </div>
@@ -336,20 +343,26 @@
           <hr>
           <h2>Mechanics</h2>
           <p>Please select your technican</p>
-          <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+          <select class="form-select form-select-sm" aria-label=".form-select-sm example" onchange="getMechanic(this)">
              <option selected>Select technican</option>
-             <option value="1">Trey</option>
-             <option value="2">Jerry </option>
-             <option value="3">Andre</option>
-             <option value="3">No preference</option>
+             <option value="1">Batuhan</option>
+             <option value="2">Mumen </option>
+             <option value="3">Stewart</option>
+             <option value="4">No preference</option>
           </select>
           <hr>
           <!-- notify user of the availability of technican before selecting time, let them block dates that arent bookable and let users know-->
           <h2>Appointment Time</h2>
-          <p>Please select appointment time</p>
+          <p>Please select an appointment time</p>
           <div class="request-label">
-            <label for="appTime">Request Appointment for: </label>
-            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <label for="appTime">Choose an appointment date: </label>
+            <input type="text" id="datepicker">
+            <form>
+            <label for="appt-time">Choose an appointment time (8:30am - 10:00pm): </label>
+            <input id="appt-time" type="time" name="appt-time"
+                  min="12:00" max="18:00">
+            <span class="validity"></span>
+          </form>
           </div>
     </div>
   </div>
@@ -358,7 +371,7 @@
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Contact Information
+          Payment Details
         </button>
       </h5>
     </div>
@@ -368,9 +381,11 @@
         <div class="form-group">
           <div class="row">
             <div class="col-6" style="float: right;">
+            <label for="fnameLabel">First Name</label>
               <input type="text" id="fname" name="firstname" placeholder="First Name">
             </div>
             <div class="col-6">
+            <label for="lnameLabel">Last Name</label>
               <input type="text" id="lname" name="lastname" placeholder="Last Name">
             </div>
           </div>
@@ -378,21 +393,47 @@
         <div class="form-group">
           <div class="row">
             <div class="col-6" style="float: right;">
+              <label for="phoneNumLabel">Phone Number</label>
               <input type="text" id="phoneNum" name="phoneNumber" placeholder="Phone Number">
             </div>
             <div class="col-6">
+              <label for="emailLabel">Email</label>
               <input type="text" id="email" name="email" placeholder="Email">
             </div>
           </div>
         </div>
+        <hr>
+        <h2>Account Details</h2>
+         <div class="form-group">
+          <div class="row">
+            <div class="col-6" style="float: right;">
+              <label for="cardHolderLabel">Name on the card</label>
+              <input type="text" id="cardHolder" name="cardHolder" placeholder="Name on the Card">
+            </div>
+            <div class="col-6">
+              <label for="creditCardLabel">Credit Card</label> 
+              <input type="text" id="creditCard" name="creditCard" placeholder="Credit Card">
+            </div>
+          </div>
+        </div>
         <div class="form-group">
-          <textarea id="message" name="message" placeholder="Your Message" style="height:200px"></textarea>
+          <div class="row">
+            <div class="col-4">
+            <label for="expiryDateLabel">Expiry Date</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date">
+            </div>
+            <div class="col-2">
+            <label for="cvvLabel">CVV</label>
+              <input type="text" id="expiryDate" name="cvv" placeholder="CVV">
+            </div>
+          </div>
+          
         </div>
       </form>
     </div>
     </div>
   </div>
-  <div class="card">
+  <!--<div class="card">
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -404,7 +445,7 @@
       <div class="card-body">
         </div>
     </div>
-  </div>
+  </div> -->
   </div>
        <br>
        <br>
@@ -432,7 +473,33 @@
     function toAppointment() {
       document.getElementById('appointment').scrollIntoView();
     }
+
+    var value = 0; 
+
+    $(function() {
+        $( "#datepicker").datepicker({ beforeShowDay: getAvailability});
+    });  
+
+    function getMechanic(selectObject) {
+      value = selectObject.value;  
+    }
+
+    function getAvailability(date){
+
+      if (value == 1 && (date.getDay() === 0 || date.getDay()==6))  /* restrict weekends */
+            return [false]
+      if (value == 2 && (date.getDay() === 0 || date.getDay()==1 || date.getDay()==4 || date.getDay()==5 || date.getDay()==6))  /* restrict M,Thurs, Fri, Sat, Sun */
+            return [false]
+      if (value == 3 && (date.getDay() === 0 || date.getDay()==4 || date.getDay()==5 || date.getDay()==6 ))  /* restrict Thurs, Fri, Sat, Sun */
+            return [false]
+      if (date.getDay() === 0 || date.getDay()== 6 )  /* weekends */
+            return [false]
+      else
+            return [ true, "", "" ]
+    }
+    
   </script>
+  
 
 </body>
 
