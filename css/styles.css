@@ -62,13 +62,24 @@ h3 {
     font-size: 1.5rem;
 }
 
-h5{
-    font-weight: bold;
+h5 {
+    font-size: 23px;
 }
 
 p {
     color: rgb(77, 77, 77);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 20%;
+    /* margin: 100px auto; */
+}
+
+h2:hover {
+    color: #72a7b3
 }
 
 
@@ -81,6 +92,7 @@ p {
 .section-heading {
     font-size: 3rem;
     line-height: 1.5;
+    color: #34626c
 }
 
 .navbar-brand {
@@ -135,24 +147,22 @@ p {
     text-align: left;
 }
 
+
 /* Worker profiles  */
-.profile{
-    width:  200px;
+
+.profile {
+    width: 200px;
     height: 200px;
     object-fit: cover;
-
-
 }
 
-.profile_names{
-    font-size:25px;
+.profile_names {
+    font-size: 25px;
 }
 
-.name_text{
+.name_text {
     font-weight
-
 }
-
 
 
 /* Features section */
@@ -252,13 +262,26 @@ input:invalid+span:after {
     position: absolute;
     content: '✖';
     padding-left: 5px;
-  }
+    <<<<<<< HEAD
+}
 
-  input:valid+span:after {
+input:valid+span:after {
+    =======
+}
+
+input:valid+span:after {
     position: absolute;
     content: '✓';
     padding-left: 5px;
-  }
+}
+
+.errorMsg {
+    color: red;
+}
+
+.accountLabel {
+    text-align: left;
+}
 
 
 /* Footer section */
@@ -268,13 +291,13 @@ input:invalid+span:after {
 .social-icon {
     margin: 20px 10px;
 }
+
 .res {
-  text-align: center;
-
+    text-align: center;
 }
-.rec {
-  text-align: center;
 
+.rec {
+    text-align: center;
 }
 
 @media (max-width: 1028px) {
