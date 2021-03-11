@@ -323,7 +323,7 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link"  data-toggle2= "tooltip" data-placement="top" title="Book services by clicking this button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           Book Services
         </button>
       </h5>
@@ -370,7 +370,7 @@
     <div class="card">
     <div class="card-header" id="headingTwo">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <button class="btn btn-link collapsed" data-tooltip= "tooltip" data-placement="top" title="Access payment by clicking this button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           Payment Details
         </button>
       </h5>
@@ -378,7 +378,6 @@
     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
       <div class="card-body">
         <h2><i class="far fa-address-book"></i> Contact Information</h2>
-        <p class="res">Please fill the spaces below with your contact information</p>
         <form>
         <div class="form-group">
           <div class="row">
@@ -407,8 +406,13 @@
           </div>
         </div>
         <hr>
+
+        <p class="rec">Please provide your credit card information to guarantee your service appointment.</p>
+        <h2>Account Details</h2>
+
         <h2><i class="fas fa-money-check-alt"></i> Payment Information</h2>
-        <p class="rec">Please fill the spaces below with your payment information</p>
+        <p>Please fill the spaces below with your payment information</p>
+
          <div class="form-group">
           <div class="row">
             <div class="col-6" style="float: right;">
@@ -502,6 +506,11 @@
       else
             return [ true, "", "" ]
     }
+    $(function(){
+      $('[data-toggle2="tooltip"]').tooltip();
+      $('[data-tooltip="tooltip"]').tooltip();
+
+    });
 
   </script>
 
