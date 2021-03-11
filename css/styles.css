@@ -78,9 +78,8 @@ hr {
     /* margin: 100px auto; */
 }
 
-
-h2:hover{
-    color:#72a7b3
+h2:hover {
+    color: #72a7b3
 }
 
 
@@ -263,6 +262,11 @@ input:invalid+span:after {
     position: absolute;
     content: '✖';
     padding-left: 5px;
+    <<<<<<< HEAD
+}
+
+input:valid+span:after {
+    =======
 }
 
 input:valid+span:after {
@@ -272,12 +276,13 @@ input:valid+span:after {
 }
 
 .errorMsg {
-  color: red;
+    color: red;
 }
 
 .accountLabel {
-  text-align: left;
+    text-align: left;
 }
+
 
 /* Footer section */
 
@@ -285,6 +290,14 @@ input:valid+span:after {
 
 .social-icon {
     margin: 20px 10px;
+}
+
+.res {
+    text-align: center;
+}
+
+.rec {
+    text-align: center;
 }
 
 @media (max-width: 1028px) {

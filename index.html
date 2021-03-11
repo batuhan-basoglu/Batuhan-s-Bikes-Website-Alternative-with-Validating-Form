@@ -296,14 +296,15 @@
       <h2 class="big-heading"> <i class="far fa-clock"></i> Book an Appointment </h2>
       <br>
       <!-- Accordion for booking a service-->
-      <form method="post" id="contactForm">
+      <!--  -->
+      <form id="contactForm" method="post">
 
         <div id="accordion">
           <!-- Service Accordion -->
           <div class="card">
             <div class="card-header" id="headingOne">
               <h5 class="mb-0">
-                <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button type="button" class="btn btn-link" data-toggle2= "tooltip" data-placement="top" title="Book services by clicking this button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Book Services
                 </button>
               </h5>
@@ -319,7 +320,7 @@
                   <option value="1">Brake Repair</option>
                   <option value="2">Fixing Punctures</option>
                   <option value="3">Full Repair/Maintenance</option>
-                  <option value="3">Other Inquiries</option>
+                  <option value="4">Other Inquiries</option>
                 </select>
                 <span id="serviceError" class="errorMsg"></span>
                 <hr>
@@ -357,7 +358,7 @@
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h5 class="mb-0">
-                <button type="button" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <button type="button" class="btn btn-link collapsed" data-tooltip= "tooltip" data-placement="top" title="Access payment by clicking this button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Payment Details
                 </button>
               </h5>
@@ -427,15 +428,13 @@
                       </div>
                     </div>
                   </div>
-                <!-- </form> -->
               </div>
             </div>
           </div>
         </div>
         <br>
         <br>
-        <!--<input type="submit" value="Submit"> -->
-        <button type="button" class="btn btn-lg btn-outline-secondary" id="submitButton" onclick="validateForm()">Submit</button>
+        <button type="button" class="btn btn-lg btn-outline-success" id="submitButton" onclick="validateForm()">Submit</button>
       </form>
     </div>
   </section>
