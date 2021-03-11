@@ -136,4 +136,7 @@ function validateForm() {
     } else {
         $("#cvvError").html("");
     }
+    //after all the test pass submit the form and reset.
+    contactForm.reset();
+
 }
