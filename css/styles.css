@@ -271,6 +271,13 @@ input:valid+span:after {
     padding-left: 5px;
 }
 
+.errorMsg {
+  color: red;
+}
+
+.accountLabel {
+  text-align: left;
+}
 
 /* Footer section */
 
