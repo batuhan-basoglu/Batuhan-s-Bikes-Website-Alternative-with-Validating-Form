@@ -209,7 +209,7 @@
           <div class="card-body">
             <h2 class="price-text">$47.95</h2>
             <img class="title-image" src="images/brake.jpg" alt="bike1">
-        
+
             <p> <br>Standard Kit | Part Replacement</p>
             <!-- <button type="button" onclick="toAppointment()" class="btn btn-block btn-outline-dark btn-lg">Select</button> -->
           </div>
@@ -296,7 +296,7 @@
       <h2 class="big-heading"> <i class="far fa-clock"></i> Book an Appointment </h2>
       <br>
       <!-- Accordion for booking a service-->
-      <form onsubmit="validateForm()" method="post">
+      <form method="post" id="contactForm">
 
         <div id="accordion">
           <!-- Service Accordion -->
@@ -321,6 +321,7 @@
                   <option value="3">Full Repair/Maintenance</option>
                   <option value="3">Other Inquiries</option>
                 </select>
+                <span id="serviceError" class="errorMsg"></span>
                 <hr>
                 <h2><i class="fas fa-users"></i> Mechanics</h2>
                 <p>Please select your technican</p>
@@ -332,6 +333,7 @@
                   <option value="3">Stewart</option>
                   <option value="4">No preference</option>
                 </select>
+                <p id="technicanError" class="errorMsg"></p>
                 <hr>
                 <!-- notify user of the availability of technican before selecting time, let them block dates that arent bookable and let users know-->
                 <h2><i class="fas fa-calendar-plus"></i> Appointment Time</h2>
@@ -340,10 +342,12 @@
                 <div class="request-label">
                   <label for="appTime">Choose an appointment date: </label>
                   <input type="text" id="datepicker">
+                  <p id="dateError" class="errorMsg"></p>
                   <div>
                     <label for="appt-time">Choose an appointment time (8:30am - 10:00pm): </label>
                     <input id="appt-time" type="time" name="appt-time" min="12:00" max="18:00">
                     <span class="validity"></span>
+                    <p id="timeError" class="errorMsg"></p>
                   </div>
                 </div>
               </div>
@@ -366,25 +370,29 @@
                 <!-- <form> -->
                   <div class="form-group">
                     <div class="row">
-                      <div class="col-6" style="float: right;">
+                      <div class="col-6 accountLabel" style="float: right;">
                         <label for="fnameLabel">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        <p id="fnameError" class="errorMsg"></p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-6 accountLabel">
                         <label for="lnameLabel">Last Name</label>
                         <input type="text" id="lname" name="lastname" placeholder="Last Name">
+                        <p id="lnameError" class="errorMsg"></p>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="row">
-                      <div class="col-6" style="float: right;">
+                      <div class="col-6 accountLabel" style="float: right;">
                         <label for="phoneNumLabel">Phone Number</label>
                         <input type="text" id="phoneNum" name="phoneNumber" placeholder="Phone Number">
+                        <p id="phoneNumberError" class="errorMsg"></p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-6 accountLabel">
                         <label for="emailLabel">Email</label>
                         <input type="text" id="email" name="email" placeholder="Email">
+                        <p id="emailError" class="errorMsg"></p>
                       </div>
                     </div>
                   </div>
@@ -393,25 +401,29 @@
                   <p>Please fill the spaces below with your payment information</p>
                   <div class="form-group">
                     <div class="row">
-                      <div class="col-6" style="float: right;">
+                      <div class="col-6 accountLabel" style="float: right;">
                         <label for="cardHolderLabel">Name on the card</label>
                         <input type="text" id="cardHolder" name="cardHolder" placeholder="Name on the Card">
+                        <p id="cardHolderError" class="errorMsg"></p>
                       </div>
-                      <div class="col-6">
+                      <div class="col-6 accountLabel">
                         <label for="creditCardLabel">Credit Card</label>
                         <input type="text" id="creditCard" name="creditCard" placeholder="Credit Card">
+                        <p id="creditCardError" class="errorMsg"></p>
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="row">
-                      <div class="col-4">
+                      <div class="col-4 accountLabel">
                         <label for="expiryDateLabel">Expiry Date</label>
                         <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date">
+                        <p id="expiryDateError" class="errorMsg"></p>
                       </div>
-                      <div class="col-2">
+                      <div class="col-2 accountLabel">
                         <label for="cvvLabel">CVV</label>
-                        <input type="text" id="expiryDate" name="cvv" placeholder="CVV">
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                        <p id="cvvError" class="errorMsg"></p>
                       </div>
                     </div>
                   </div>
@@ -423,7 +435,7 @@
         <br>
         <br>
         <!--<input type="submit" value="Submit"> -->
-        <button type="button" class="btn btn-lg btn-outline-secondary alert" id="submitButton"">Submit</button>
+        <button type="button" class="btn btn-lg btn-outline-secondary" id="submitButton" onclick="validateForm()">Submit</button>
       </form>
     </div>
   </section>
