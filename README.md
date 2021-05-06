@@ -1,8 +1,8 @@
-# SEG3125-LAB5
+# Batuhan's Bikes Website Alternative with Validating Form
 
 The validated service company website made by Ruchira Perrera, Sam Oyediran, Batuhan Basoglu, and Kene Ojukwu
 
-https://arctichawk1.github.io/SEG3125-LAB5/
+https://arctichawk1.github.io/Batuhan-s-Bikes-Website-Alternative-with-Validating-Form/
 
 
 Noteable bugs in the website 
